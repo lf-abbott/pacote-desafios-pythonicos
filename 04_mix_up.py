@@ -13,7 +13,10 @@ Assuma que a e b tem tamanho 2 ou maior.
 """
 
 def mix_up(a, b):
-    # +++ SUA SOLUÇÃO +++
+    na = b[0]+b[1]+a[2:]
+    nb = a[0]+a[1]+b[2:]
+    return na +' '+ nb
+
     return
 
 
