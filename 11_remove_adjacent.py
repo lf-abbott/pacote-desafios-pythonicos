@@ -8,9 +8,11 @@ Exemplo: [1, 2, 2, 3]
 Irá retornar: [1, 2, 3]
 """
 
+from itertools import groupby
+
 def remove_adjacent(nums):
-    # +++ SUA SOLUÇÃO +++
-    return
+    res = [x for x,_ in groupby(nums)]
+    return (res)
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
