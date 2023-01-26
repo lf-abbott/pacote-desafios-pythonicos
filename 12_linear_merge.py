@@ -10,8 +10,35 @@ A sua solução deve rodar em tempo linear, ou seja, deve fazer uma
 """
 
 def linear_merge(list1, list2):
-    # +++ SUA SOLUÇÃO +++
-    return
+    tam1 = len(list1)
+    tam2 = len(list2)
+    
+    cont = 0
+    listao = []
+    
+    if tam1>tam2:
+        while cont < tam2:
+            listao.append(list1[cont])
+            listao.append(list2[cont])
+            cont = cont +1
+        dif = tam1 - tam2
+        while dif > 0:
+            listao.append(list1[tam1-dif])
+            dif = dif -1
+    else:
+        while cont < tam1:
+            listao.append(list1[cont])
+            listao.append(list2[cont])
+            cont = cont +1
+        dif = tam2 - tam1
+        while dif > 0:
+            listao.append(list2[tam2-dif])
+            dif = dif -1
+        
+    listao.sort()    
+
+    return (listao)
+ 
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
