@@ -38,8 +38,17 @@ def linear_merge(list1, list2):
     listao.sort()    
 
     return (listao)
- 
 
+"""
+# outra solução que fuciona com as duas expresoes l1 ou l2:
+
+def linear_merge(list1, list2):
+    [list2.append(i) for i in list1]
+    list2.sort()
+    
+    return (list2)
+ 
+"""
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
