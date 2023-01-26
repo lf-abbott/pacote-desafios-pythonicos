@@ -49,6 +49,16 @@ def linear_merge(list1, list2):
     return (list2)
  
 """
+"""
+#outra solução mais evoluida:
+
+from heapq import merge
+
+def linear_merge(list1, list2):
+    
+    return list(merge(list1, list2))
+    
+"""
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
