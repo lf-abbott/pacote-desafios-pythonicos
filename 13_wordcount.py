@@ -53,9 +53,34 @@ e conferindo cada etapa do seu progresso.
 
 import sys
 
-
 # +++ SUA SOLUÇÃO +++
 # Defina as funções print_words(filename) e print_top(filename).
+
+import sys
+
+def print_words():
+    cortes = filename.split()
+
+    cxb = []
+    for x in cortes:
+        cxb.append(x.casefold())
+    
+    counts=dict()
+
+    for wrd in cxb:
+        if wrd in counts:
+            counts[wrd]+=1
+    else:
+        counts[word] =1
+    
+    for key, value in counts.item():
+        print(key, ' ', value)
+
+
+def.print_top(filename):
+    
+    print_top = sorted(counts.items(), key=lambda x:x[1])
+    print(print_top)
 
 
 # A função abaixo chama print_words() ou print_top() de acordo com os
